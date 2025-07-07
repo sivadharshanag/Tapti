@@ -16,16 +16,16 @@ const subcategories = [
     button: 'Enquire'
   },
   {
-    name: 'Project Work',
+    name: 'Project Allignment',
     icon: FaBookOpen,
-    description: 'College/school projects',
-    button: 'Order Now'
+    description: 'Ug,Pg,Phd Project',
+    button: 'Enquire'
   },
   {
     name: 'Project Binding',
     icon: FaFileSignature,
-    description: 'Bind your reports professionally',
-    button: 'Order Now'
+    description: 'Soft,Hard,Calico',
+    button: 'Enquire'
   }
 ];
 

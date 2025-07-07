@@ -1,24 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowRight, FiCheckCircle, FiStar, FiUsers, FiAward, FiClock } from 'react-icons/fi';
-import PaperRocket from '../components/PaperRocket';
+import FastPaperRockets from '../components/FastPaperRockets';
 
 const Home = () => {
-  const [rockets, setRockets] = useState([]);
-
-  useEffect(() => {
-    // Create multiple paper rockets for background animation
-    const createRockets = () => {
-      const rocketElements = [];
-      for (let i = 0; i < 6; i++) {
-        rocketElements.push(<PaperRocket key={i} />);
-      }
-      setRockets(rocketElements);
-    };
-
-    createRockets();
-  }, []);
-
   const features = [
     {
       icon: FiCheckCircle,
@@ -52,9 +37,7 @@ const Home = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background Paper Rockets */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        {rockets}
-      </div>
+      <FastPaperRockets />
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">

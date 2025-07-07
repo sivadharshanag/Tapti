@@ -7,25 +7,13 @@ import {
   FiZap, FiLayers, FiPackage, FiMonitor, FiSmartphone, FiDatabase,
   FiCheckCircle, FiClock, FiUsers, FiStar as FiStarFilled
 } from 'react-icons/fi';
-import PaperRocket from '../components/PaperRocket';
+import FastPaperRockets from '../components/FastPaperRockets';
 
 const ServiceDetail = () => {
   const { serviceId } = useParams();
-  const [rockets, setRockets] = useState([]);
   const [service, setService] = useState(null);
 
-  useEffect(() => {
-    // Create multiple paper rockets for background animation
-    const createRockets = () => {
-      const rocketElements = [];
-      for (let i = 0; i < 6; i++) {
-        rocketElements.push(<PaperRocket key={i} />);
-      }
-      setRockets(rocketElements);
-    };
 
-    createRockets();
-  }, []);
 
   // Service data - this would typically come from an API
   const servicesData = {
@@ -295,9 +283,7 @@ const ServiceDetail = () => {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background Paper Rockets */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        {rockets}
-      </div>
+      <FastPaperRockets />
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">

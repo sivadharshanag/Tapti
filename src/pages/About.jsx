@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiAward, FiUsers, FiClock, FiCheckCircle, FiStar, FiMessageSquare } from 'react-icons/fi';
+import FastPaperRockets from '../components/FastPaperRockets';
 
 const About = () => {
   const stats = [
@@ -50,7 +51,8 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 relative overflow-hidden">
+      <FastPaperRockets />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

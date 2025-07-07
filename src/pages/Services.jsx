@@ -1,27 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   FaPrint, FaFileAlt, FaPenNib, FaKeyboard, FaBaby, FaIdCard, FaGlobe,
   FaArrowRight, FaRocket
 } from 'react-icons/fa';
-import PaperRocket from '../components/PaperRocket';
+import FastPaperRockets from '../components/FastPaperRockets';
 
 const Services = () => {
-  const [rockets, setRockets] = useState([]);
-
-  useEffect(() => {
-    // Create multiple paper rockets for background animation
-    const createRockets = () => {
-      const rocketElements = [];
-      for (let i = 0; i < 12; i++) {
-        rocketElements.push(<PaperRocket key={i} />);
-      }
-      setRockets(rocketElements);
-    };
-
-    createRockets();
-  }, []);
-
   const serviceCategories = [
     {
       id: 'printing-xerox',
@@ -84,9 +69,7 @@ const Services = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gray-50 dark:bg-gray-900">
       {/* Background Paper Rockets */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        {rockets}
-      </div>
+      <FastPaperRockets />
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">

@@ -7,25 +7,26 @@ const subcategories = [
     name: 'Computer Jathagam',
     icon: FaStar,
     description: 'Digital astrology charts',
-    button: 'Enquire'
+    
   },
   {
     name: 'Jathagam Matching',
     icon: FaUserFriends,
     description: 'Match horoscopes',
-    button: 'Enquire'
+    button: 'Enquire',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSeX15UHxTt62KNRHKuM5Pi03kkazSToOnT3O8ggXrnbcp7bVQ/viewform?usp=header'
   },
   {
     name: 'Baby Names',
     icon: FaBaby,
     description: 'Name suggestions based on astrology',
-    button: 'Enquire'
+    
   },
   {
     name: 'One Page Jathagam',
     icon: FaFileAlt,
     description: 'Quick printable format',
-    button: 'Order Now'
+    
   }
 ];
 
@@ -37,4 +38,4 @@ export default function AstrologyBabyNames() {
       subcategories={subcategories}
     />
   );
-} 
+}

@@ -1,27 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   FaArrowLeft, FaPrint, FaCopy, FaImage, FaExpand, FaPhone, FaEnvelope,
   FaMapMarkerAlt, FaCheckCircle, FaRocket
 } from 'react-icons/fa';
-import PaperRocket from '../components/PaperRocket';
+import FastPaperRockets from '../components/FastPaperRockets';
 
 const PrintingXerox = () => {
-  const [rockets, setRockets] = useState([]);
-
-  useEffect(() => {
-    // Create multiple paper rockets for background animation
-    const createRockets = () => {
-      const rocketElements = [];
-      for (let i = 0; i < 8; i++) {
-        rocketElements.push(<PaperRocket key={i} />);
-      }
-      setRockets(rocketElements);
-    };
-
-    createRockets();
-  }, []);
-
   const subcategories = [
     {
       id: 'lazer-xerox',
@@ -60,9 +45,7 @@ const PrintingXerox = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gray-50 dark:bg-gray-900">
       {/* Background Paper Rockets */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        {rockets}
-      </div>
+      <FastPaperRockets />
       
       {/* Back to Services Button */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">

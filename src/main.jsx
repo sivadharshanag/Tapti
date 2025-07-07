@@ -18,6 +18,7 @@ import OnlineGovtServices from './pages/OnlineGovtServices'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
+import MatrimonyMatching from './pages/MatrimonyMatching'
 import './index.css'
 
 // Initialize AOS with enhanced settings
@@ -47,6 +48,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="/astrology-services" element={<AstrologyBabyNames />} />
             <Route path="/pan-id-services" element={<PanIdServices />} />
             <Route path="/online-govt-services" element={<OnlineGovtServices />} />
+            <Route path="/matrimony" element={<MatrimonyMatching />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />

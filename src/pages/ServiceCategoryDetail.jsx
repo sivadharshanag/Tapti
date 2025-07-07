@@ -1,31 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import PaperRocket from '../components/PaperRocket';
+import FastPaperRockets from '../components/FastPaperRockets';
 
 const ServiceCategoryDetail = ({
   title,
   tagline,
   subcategories = []
 }) => {
-  const [rockets, setRockets] = useState([]);
 
-  useEffect(() => {
-    // Create multiple paper rockets for background animation
-    const createRockets = () => {
-      const rocketElements = [];
-      for (let i = 0; i < 10; i++) {
-        rocketElements.push(<PaperRocket key={i} />);
-      }
-      setRockets(rocketElements);
-    };
-    createRockets();
-  }, []);
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-gray-50 dark:bg-gray-900">
       {/* Animated Paper Rockets Background */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        {rockets}
-      </div>
+      <FastPaperRockets />
 
       {/* Title & Tagline */}
       <section className="relative pt-32 pb-10 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
