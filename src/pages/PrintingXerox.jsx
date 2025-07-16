@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { 
   FaArrowLeft, FaPrint, FaCopy, FaImage, FaExpand, FaPhone, FaEnvelope,
   FaMapMarkerAlt, FaCheckCircle, FaRocket
@@ -7,6 +7,7 @@ import {
 import FastPaperRockets from '../components/FastPaperRockets';
 
 const PrintingXerox = () => {
+  const navigate = useNavigate();
   const subcategories = [
     {
       id: 'lazer-xerox',
@@ -48,7 +49,7 @@ const PrintingXerox = () => {
       <FastPaperRockets />
       
       {/* Back to Services Button */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+      <div className="w-full px-4 pt-8">
         <Link
           to="/services"
           className="inline-flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-300 mb-4"
@@ -172,7 +173,10 @@ const PrintingXerox = () => {
                       ))}
                     </div>
 
-                    <button className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 group-hover:from-blue-700 group-hover:to-purple-700">
+                    <button
+                      className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300 group-hover:from-blue-700 group-hover:to-purple-700"
+                      onClick={() => navigate('/contact')}
+                    >
                       Enquire Now
                     </button>
                   </div>

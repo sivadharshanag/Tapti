@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FiPhone, FiMail, FiMapPin, FiClock, FiSend, FiCheckCircle } from 'react-icons/fi'
 import FastPaperRockets from '../components/FastPaperRockets'
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,15 +20,26 @@ const Contact = () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData)
-    setIsSubmitted(true)
-    setFormData({ name: '', email: '', message: '' })
-    
-    // Reset submission status after 3 seconds
-    setTimeout(() => setIsSubmitted(false), 3000)
-  }
+    e.preventDefault();
+    // Replace the following with your EmailJS credentials
+    const SERVICE_ID = 'service_ex37rfd';
+    const TEMPLATE_ID = 'template_kvgkhqj';
+    const PUBLIC_KEY = 'ewTbNH5PtzkJABLWF';
+
+    emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      formData,
+      PUBLIC_KEY
+    )
+    .then((result) => {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 3000);
+    }, (error) => {
+        alert('Failed to send message, please try again.');
+    });
+  };
 
   const contactInfo = [
     {

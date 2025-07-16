@@ -55,7 +55,7 @@ const About = () => {
       <FastPaperRockets />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               About{' '}
@@ -72,7 +72,7 @@ const About = () => {
 
       {/* Story Section */}
       <section className="py-20 bg-white dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
@@ -95,7 +95,7 @@ const About = () => {
             </div>
             <div className="relative" data-aos="fade-left">
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src="https://lirp.cdn-website.com/f843778e/dms3rep/multi/opt/v2-pr1cg-caa64-640w.jpg"
                 alt="Tapti Ultimate Shop"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
@@ -107,7 +107,7 @@ const About = () => {
 
       {/* Stats Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
@@ -132,7 +132,7 @@ const About = () => {
 
       {/* Values Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="text-center mb-16" data-aos="fade-up">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Our Values
@@ -170,7 +170,7 @@ const About = () => {
 
       {/* Testimonials Section */}
       <section className="py-20 bg-white dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="text-center mb-16" data-aos="fade-up">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
               What Our Customers Say
@@ -226,7 +226,7 @@ const About = () => {
 
       {/* Mission Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">

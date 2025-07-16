@@ -46,7 +46,7 @@ const Services = () => {
       icon: FaBaby,
       description: 'Horoscope generation, baby name suggestions',
       color: 'from-yellow-500 to-orange-600',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOGDxJ0FWQCSHXEmPGOJlrV_dTpE8-LjzUDA&s'
     },
     {
       id: 'pan-id-services',
@@ -73,7 +73,7 @@ const Services = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="text-center" data-aos="fade-up">
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
               Our{' '}
@@ -91,7 +91,7 @@ const Services = () => {
 
       {/* Services Grid */}
       <section className="py-20 bg-white dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {serviceCategories.map((category, index) => {
               const IconComponent = category.icon;
@@ -147,7 +147,7 @@ const Services = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="w-full px-4 text-center">
           <div className="max-w-3xl mx-auto" data-aos="fade-up">
             <h2 className="text-4xl font-bold text-white mb-6">
               Need Help Choosing a Service?

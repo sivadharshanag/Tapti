@@ -14,7 +14,7 @@ const PanIdServices = () => {
       id: 'new-pan-card',
       title: 'New PAN Card',
       description: 'Fresh PAN card application with complete document assistance',
-      cost: '₹150',
+      
       features: ['Online Application', 'Document Assistance', 'Quick Processing', 'Status Tracking'],
       icon: FaPlus,
       image: 'https://images.unsplash.com/photo-1554224154-26032cdc0c83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
@@ -23,7 +23,7 @@ const PanIdServices = () => {
       id: 'correction-pan',
       title: 'Correction PAN',
       description: 'Fix errors in your existing PAN card details',
-      cost: '₹200',
+     
       features: ['Name Correction', 'Address Update', 'Photo Update', 'Quick Processing'],
       icon: FaEdit,
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
@@ -32,7 +32,7 @@ const PanIdServices = () => {
       id: 'missing-pan',
       title: 'Missing PAN',
       description: 'Reissue of lost or damaged PAN card',
-      cost: '₹250',
+      
       features: ['Duplicate Application', 'Document Verification', 'Quick Processing', 'Tracking'],
       icon: FaSearch,
       image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
@@ -41,7 +41,7 @@ const PanIdServices = () => {
       id: 'aadhaar-card',
       title: 'Aadhaar Card',
       description: 'Aadhaar card services including updates and corrections',
-      cost: '₹100',
+      
       features: ['Updates', 'Corrections', 'Assistance', 'Document Help'],
       icon: FaUserEdit,
       image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
@@ -55,7 +55,7 @@ const PanIdServices = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <div className="space-y-8" data-aos="fade-right">
@@ -126,7 +126,7 @@ const PanIdServices = () => {
 
       {/* Subcategories Grid */}
       <section className="py-20 bg-white dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="text-center mb-16" data-aos="fade-up">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Our Services
@@ -197,7 +197,7 @@ const PanIdServices = () => {
 
       {/* Contact Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
